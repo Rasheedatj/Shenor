@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 15px 15px 15px;
+  text-transform: capitalize;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+header {
+  display: grid;
+  place-items: center;
+}
+section > h1 {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  padding-block: 7px;
+  margin-top: 1.5rem;
+}
+
+table {
+  width: 100%;
+  /* border-collapse: collapse;
+  border-spacing: 0; */
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed black;
+  padding-block: 10px;
+  font-size: 15px;
+}
+
+.top {
+  padding-top: 11px;
+}
+
+td {
+  padding-top: 3px;
+}
+
+td {
+  font-size: 13px;
+}
+
+.list footer {
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.sub-total {
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  padding-block: 9px;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.discount,
+.dis-tot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.dis-tot {
+  padding-bottom: 10px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+}
+
+.total .tot {
+  border-top: 1px dashed black;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.total .cash {
+  padding-bottom: 5px;
+}
+.total > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tendered {
+  border-top: 1px dashed black;
+  padding-top: 9px;
+}
+
+.change {
+  border-bottom: 1px dashed black;
+  padding-bottom: 9px;
+  padding-top: 5px;
+}
+
+.total > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  padding-block: 9px;
+  font-weight: 500;
+}

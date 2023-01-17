@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css custom link -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>POS Reciept</title>
+  </head>
+  <body>
+    <header>
+      <div>LOGO</div>
+    </header>
+
+    <section>
+      <h1 class="sales">sales Reciept</h1>
+
+      <div class="list">
+        <table>
+          <thead class="head">
+            <th>qty</th>
+            <th>item description</th>
+            <th>rate</th>
+            <th>price</th>
+          </thead>
+
+          <tbody>
+            <tr class="item-1">
+              <td class="top">1x</td>
+              <td class="top">bulmers original bottle</td>
+              <td class="top">#400.00</td>
+              <td class="top">#400.00</td>
+            </tr>
+
+            <tr class="item-2">
+              <td>5x</td>
+              <td>vitamilk double choco</td>
+              <td>#700.00</td>
+              <td>#3500.00</td>
+            </tr>
+
+            <tr class="item-3">
+              <td>1x</td>
+              <td>pringles</td>
+              <td>#1500.00</td>
+              <td>#1500.00</td>
+            </tr>
+
+            <tr class="item-4">
+              <td>40x</td>
+              <td>capri sunne</td>
+              <td>#100.00</td>
+              <td>#4000.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <footer>
+          <p>47x items sold</p>
+        </footer>
+      </div>
+
+      <!-- sub total -->
+      <div class="sub-total">
+        <p>sub total</p>
+        <p>#9400.00</p>
+      </div>
+
+      <!-- calculations -->
+      <div class="discount">
+        <p>transaction discount</p>
+        <p>0.00</p>
+      </div>
+
+      <div class="dis-tot">
+        <p>discount total:</p>
+        <p>-0.00</p>
+      </div>
+
+      <!-- total -->
+      <div class="total">
+        <div class="tot">
+          <h1>total:</h1>
+          <p>#9400.00</p>
+        </div>
+
+        <div class="cash">
+          <p>cash</p>
+          <p>#10000.00</p>
+        </div>
+
+        <!-- tendered -->
+        <div class="tendered">
+          <p>tendered total</p>
+          <p>#10000.00</p>
+        </div>
+
+        <!-- change -->
+        <div class="change">
+          <p>change</p>
+          <p>#500.00</p>
+        </div>
+
+        <h2>thank you</h2>
+      </div>
+    </section>
+
+    <footer>
+      <img src="./barcode.png" alt="barcode" />
+      <div class="timedate">
+        <p>22285</p>
+        <p id="date-time"></p>
+        <p id="time"></p>
+
+        <p>admin</p>
+      </div>
+    </footer>
+
+    <script>
+      const date = new Date();
+
+      let day = date.getDate();
+      let month = date.getMonth() + 1;
+      let year = date.getFullYear();
+
+      document.getElementById(
+        "date-time"
+      ).innerHTML = `${day}-${month}-${year}`;
+
+      var time = new Date();
+      var current_time =
+        time.getHours() + ":" + time.getMinutes() + ":" + date.getSeconds();
+      document.querySelector("#time").innerHTML = current_time;
+    </script>
+  </body>
+</html>
